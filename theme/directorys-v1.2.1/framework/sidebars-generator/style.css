@@ -1,0 +1,25 @@
+.sidebar-holo-sidebar {
+    position: relative;
+}
+
+.custom-sidebar-delete-button {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 50px;
+    background: transparent url('close.png') 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.holo-custom-sidebar-form-wrapper {
+    background: #90d7ff;
+    border: 1px solid #88b0ee;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.sidebar-name .spinner {
+
+}

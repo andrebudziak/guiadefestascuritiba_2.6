@@ -1,0 +1,1390 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="_Default" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+
+<!DOCTYPE>
+
+<html>
+<head id="Head1" runat="server">
+    <title>Guia de Festas Curitiba</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link id="CssSite" href="Styles.css" runat="server" rel="stylesheet" type="text/css" />
+        <meta name="robots" content="index,follow" />
+        <meta name="url" content="www.guiadefestascuritiba.com.br">
+        <meta name="description" content="Tudo para sua festa desde a locação do espaço até a animação, materias para festa, e tudo que voce precisa.">
+        <meta name="keywords" content="15 Anos,Adereços para Festas,Animação / Recreação,Artigos para Festa,Automóveis para Eventos,Bandas e Músicos,
+                                        Bartender,Batizados,Bem-Casados,Biscuit,Bodas,Bolos Artísticos,Bolos/Doces/Salgados,Brinquedos,Buffet em Domicílio,
+                                        Buffet Infantil,Buffet Social,Café Colonial,Caricaturas,Carrinhos Alimentação,Casamentos,Cenários,Cerimonial,
+                                        Cestas Presente,Chá de Bebê,Chá de Lingerie,Chácara,Churrasco,Climatização ,Clubes,Coffe Break,Confraternizações,
+                                        Congelados,Convites/Lembrancinhas,Crepe Frances,Cupcakes,Dança para Eventos,Decoração-Ambientação,Decoração-Balão,
+                                        Decoração-Confecção,Decoração-Tema Infantil,Delivery,Designer de Eventos,Disk Carne,Distribuidoras,Equipamentos para Festa,
+                                        Especial Natal,Eventos Empresariais,Fantasias,Festa Escola,Festa Infantil,Floricultura,Formaturas,Fotografia/Filmagem,
+                                        Garçom,Kit Festa,Locação de Mesas/Cadeiras,Lua de Mel,Mágicos,Massas em Domicilio,Material para Festa,Mesas Especiais,
+                                        Mobiliário para Eventos,Moda Presente,Noivados,Organização de Eventos,Palhaços,Panquecas em Domicilio,Parques,
+                                        Personalização,Prestadores de Serviços,Produção de Eventos,Promotoras/Divulgadoras,Queijos & Vinhos,Recepcionistas e Hostess,
+                                        Retrospectiva Digital,Rodizio Pizza (Domicilio),Salão de Beleza,Salão de Festas,Sanduíches,Som/Iluminação/Djs,
+                                        Sopas em Domicilio,Teatro na Empresa,Telegrama/Serenata,Topo para Bolos,Visitas Papai Noel">
+        <meta name="charset" content="ISO-8859-1">
+        <meta name="autor" content="Andre Budziak Neto">
+        <meta name="revisit-after" content="1">
+        <meta http-equiv="imagetoolbar" content="no">
+    
+
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-7305791-1");
+                pageTracker._trackPageview();
+            } catch (err) { }
+        </script>
+
+      
+        <link id="tabCss" runat="server" href="visoft__tab_xpie7.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));
+</script>
+
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 188px;
+        }
+    </style>
+
+<div id="fb-root"></div>
+    <asp:ContentPlaceHolder id="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+    <form id="form1" runat="server">
+<div align="center">
+
+     
+        <asp:Label ID="lblCodigoCategoria" runat="server"></asp:Label>
+                          
+        <asp:Label ID="lblDescricao" runat="server"></asp:Label>
+                          
+        <asp:Label ID="lblCodigo" runat="server"></asp:Label>
+
+	<table border="0" class="tblBarraTopo" width="100%" cellspacing="0" cellpadding="0" height="145" background="imagens/barra_topo_1.jpg">
+		<tr>
+			<td>
+			<div align="center">
+				<table border="0" width="1020" cellspacing="0" cellpadding="0" height="145">
+					<tr>
+						<td width="290" align="center">
+                           <asp:LinkButton ID="lkbHome" runat="server" style="text-decoration: none" onclick="lkbHome_Click">                        
+                              <asp:Image ID="imgLogo" runat="server" border="0" ImageUrl="imagens/logo.png" width="190" height="115" />
+                           </asp:LinkButton>
+						</td>
+						<td width="730" align="center" align="left">
+						<table border="0" width="730" cellspacing="0" cellpadding="0" height="100">
+							<tr>
+								<td width="700" height="100">
+								<p align="left" style="margin-top: 0; margin-bottom: 0">
+								   <b>
+								   <font face="Verdana" size="1" color="#E89804">
+								      PUBLICIDADE
+                                   </font>
+                                   </b>
+                                </p>
+                                    <!-- INICIO slide -->
+                                     <iframe runat="server" id="frmBannerMenor" width="750px" height="150px" frameborder='0' src="slidemenor.aspx"></iframe>
+                                    <!-- FIM slide -->
+                               
+								
+
+								</td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+
+<div align="center" class="tblBarraTopo2">
+	<table  border="0" width="100%" cellspacing="0" cellpadding="0" height="65" >
+		<tr>
+			<td>
+			<div align="center">
+           <table border="0" width="1020" cellspacing="0" cellpadding="0" height="65">
+               <tr>
+                   <td>
+                      <!--
+                       <table style="width:100%;" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                               <td>
+                                    <div id="menuP" >
+                                    <ul>
+                                        <li class="item_menuP">
+                                            <img runat="server" id="imgLocaisFestas" alt="Locais para Festa" src="imagens/locais_festas.png" border="0" width="50" height="50" />
+                                            
+                                        <ul>
+                                           <li>
+                                                <table style="width:100%;" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>                   
+                                                        <td style="background-color:#ffe61a;" colspan="3">
+                                                           &nbsp;
+                                                        </td>
+                                                    </tr>                                                 
+
+                                                    <tr>                  
+                                                        <td align="center" style="background-color:#f89933; width:180px;height:20px;" colspan="3">
+                                                            <asp:Label ID="Label1" CssClass="TituloBranco" runat="server" Text="Locais para Festas"></asp:Label>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                   
+                                                        <td align="center" colspan="3">
+                                                            <asp:DataList BackColor="#ffe61a" ID="dlLocais" runat="server" RepeatDirection="Horizontal" RepeatColumns="4">
+                                                            <ItemTemplate>
+		                                                    <table border="0" width="180" cellspacing="0" cellpadding="0" height="20" >
+			                                                    <tr>
+				                                                    <td>
+                                                                        <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" runat="server" CommandArgument='<%# Bind("codigo")%>' OnClick="lnk_lnkCategoriaSup_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>                                                           
+                                                                    </td>
+			                                                    </tr>
+		                                                    </table>
+                                                            </ItemTemplate>
+                                                            </asp:DataList>
+
+                                                        </td>
+                 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                    </tr>
+                                                </table>                                        
+
+                                          </li>
+                                       </ul>
+                                       </li>
+                                    </ul>
+                                    </div>
+						       </td>
+                               <td>
+                                    <div id="menuP">
+                                    <ul>
+                                        <li class="item_menuP">
+                                            <asp:Image ID="imgDecoracao" runat="server" border="0" ImageUrl="imagens/decor_festas.png" width="50" height="50" />                                        
+                                        <ul>
+                                           <li>
+                                                <table style="width:100%;" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>                   
+                                                        <td style="background-color:#ffe61a;" colspan="3">
+                                                           &nbsp;
+                                                        </td>
+                                                    </tr>                                                 
+
+                                                    <tr>                  
+                                                        <td align="center" style="background-color:#f89933; width:180px;height:20px;" colspan="3">
+                                                            <asp:Label ID="Label2" CssClass="TituloBranco" runat="server" Text="Decoração para Festas"></asp:Label>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                   
+                                                        <td align="center" colspan="3">
+                                                            <asp:DataList BackColor="#ffe61a" ID="dlDecoracao" runat="server" RepeatDirection="Horizontal" RepeatColumns="4">
+                                                            <ItemTemplate>
+		                                                    <table border="0" width="180" cellspacing="0" cellpadding="0" height="20" >
+			                                                    <tr>
+				                                                    <td>
+                                                                        <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoriaSup_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>                                                           
+                                                                    </td>
+			                                                    </tr>
+		                                                    </table>
+                                                            </ItemTemplate>
+                                                            </asp:DataList>
+
+                                                        </td>
+                 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                    </tr>
+                                                </table>                                        
+
+                                          </li>
+                                       </ul>
+                                       </li>
+                                    </ul>
+                                    </div>                                   
+                                   
+                               </td>
+                               <td>
+                                    <div id="menuP">
+                                    <ul>
+                                        <li class="item_menuP">
+                                            <asp:Image ID="imgAlimentacao" runat="server" border="0" ImageUrl="imagens/alimentacao_festas.png" width="50" height="50" />
+                                        
+                                        <ul>
+                                           <li>
+
+
+                                                <table style="width:100%;" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>                   
+                                                        <td style="background-color:#ffe61a;" colspan="3">
+                                                           &nbsp;
+                                                        </td>
+                                                    </tr>                                                 
+
+                                                    <tr>                  
+                                                        <td align="center" style="background-color:#f89933; width:180px;height:20px;" colspan="3">
+                                                            <asp:Label ID="Label3" CssClass="TituloBranco" runat="server" Text="Alimentação"></asp:Label>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                   
+                                                        <td align="center" colspan="3">
+                                                            <asp:DataList BackColor="#ffe61a" ID="dlAlimentacao" runat="server" RepeatDirection="Horizontal" RepeatColumns="4">
+                                                            <ItemTemplate>
+		                                                    <table border="0" width="180" cellspacing="0" cellpadding="0" height="20" >
+			                                                    <tr>
+				                                                    <td>
+                                                                        <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoriaSup_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>                                                           
+                                                                    </td>
+			                                                    </tr>
+		                                                    </table>
+                                                            </ItemTemplate>
+                                                            </asp:DataList>
+
+                                                        </td>
+                 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                    </tr>
+                                                </table>                                        
+
+                                          </li>
+                                       </ul>
+                                       </li>
+                                    </ul>
+                                    </div>                                 
+                               </td>
+                               <td>
+                                    <div id="menuP">
+                                    <ul>
+                                        <li class="item_menuP">
+                                            <asp:Image ID="imgDiversao" runat="server" border="0" ImageUrl="imagens/diversao_festas.png" width="50" height="50" />                                       
+                                        <ul>
+                                           <li>
+
+                                                <table style="width:100%;" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>                   
+                                                        <td style="background-color:#ffe61a;" colspan="3">
+                                                           &nbsp;
+                                                        </td>
+                                                    </tr>                                                 
+
+                                                    <tr>                  
+                                                        <td align="center" style="background-color:#f89933; width:180px;height:20px;" colspan="3">
+                                                            <asp:Label ID="Label4" CssClass="TituloBranco" runat="server" Text="Diversão para Festas"></asp:Label>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                   
+                                                        <td align="center" colspan="3">
+                                                            <asp:DataList BackColor="#ffe61a" ID="dlDiversao" runat="server" RepeatDirection="Horizontal" RepeatColumns="4">
+                                                            <ItemTemplate>
+		                                                    <table border="0" width="180" cellspacing="0" cellpadding="0" height="20" >
+			                                                    <tr>
+				                                                    <td>
+                                                                        <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoriaSup_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>                                                           
+                                                                    </td>
+			                                                    </tr>
+		                                                    </table>
+                                                            </ItemTemplate>
+                                                            </asp:DataList>
+
+                                                        </td>
+                 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                    </tr>
+                                                </table>                                        
+
+
+
+                                          </li>
+                                       </ul>
+                                       </li>
+                                    </ul>
+                                    </div>                                   
+                                   
+                               </td>
+                               <td>
+                                    <div id="menuP">
+                                    <ul>
+                                        <li class="item_menuP">
+                                            <asp:Image ID="imgServicos" runat="server" border="0" ImageUrl="imagens/servicos_festas.png" width="50" height="50" />
+                                        <ul>
+                                           <li>
+
+                                                <table style="width:100%;" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>                   
+                                                        <td style="background-color:#ffe61a;" colspan="3">
+                                                           &nbsp;
+                                                        </td>
+                                                    </tr>                                                 
+
+                                                    <tr>                  
+                                                        <td align="center" style="background-color:#f89933; width:180px;height:20px;" colspan="3">
+                                                            <asp:Label ID="Label5" CssClass="TituloBranco" runat="server" Text="Serviços para Festas"></asp:Label>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                   
+                                                        <td align="center" colspan="3">
+                                                            <asp:DataList BackColor="#ffe61a" ID="dlServicos" runat="server" RepeatDirection="Horizontal" RepeatColumns="4">
+                                                            <ItemTemplate>
+		                                                    <table border="0" width="180" cellspacing="0" cellpadding="0" height="20" >
+			                                                    <tr>
+				                                                    <td>
+                                                                        <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoriaSup_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>                                                           
+                                                                    </td>
+			                                                    </tr>
+		                                                    </table>
+                                                            </ItemTemplate>
+                                                            </asp:DataList>
+
+                                                        </td>
+                 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                    </tr>
+                                                </table>                                        
+                                          </li>
+                                       </ul>
+                                       </li>
+                                    </ul>
+                                    </div>                                   
+
+                                   
+                               </td>
+                               <td>
+                                    <div id="menuP">
+                                    <ul>
+                                        <li class="item_menuP">
+                                            <asp:Image ID="imgTipoFesta" runat="server" border="0" ImageUrl="imagens/tipo_festa.png" width="50" height="50" />                                        
+                                        <ul>
+                                           <li>
+
+
+                                                <table style="width:100%;" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>                   
+                                                        <td style="background-color:#ffe61a;" colspan="3">
+                                                           &nbsp;
+                                                        </td>
+                                                    </tr>                                                 
+
+                                                    <tr>                  
+                                                        <td align="center" style="background-color:#f89933; width:180px;height:20px;" colspan="3">
+                                                            <asp:Label ID="Label6" CssClass="TituloBranco" runat="server" Text="Tipo de Festas"></asp:Label>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                   
+                                                        <td align="center" colspan="3">
+                                                            <asp:DataList BackColor="#ffe61a" ID="dlTipoFesta" runat="server" RepeatDirection="Horizontal" RepeatColumns="4">
+                                                            <ItemTemplate>
+		                                                    <table border="0" width="180" cellspacing="0" cellpadding="0" height="20" >
+			                                                    <tr>
+				                                                    <td>
+                                                                        <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoriaSup_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>                                                           
+                                                                    </td>
+			                                                    </tr>
+		                                                    </table>
+                                                            </ItemTemplate>
+                                                            </asp:DataList>
+
+                                                        </td>
+                 
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                        <td>
+                                                            &nbsp;</td>
+                                                    </tr>
+                                                </table>                                        
+
+
+                                          </li>
+                                       </ul>
+                                       </li>
+                                    </ul>
+                                    </div>                                   
+                                   
+                               </td>
+
+                           </tr>
+                           </table>
+                         -->
+
+                   </td>
+                   <td>
+
+
+                       
+						<table class="tblPesquisar" border="0" width="396" cellspacing="0" cellpadding="0" height="38" background="imagens/pesquisar.png">
+							<tr>
+								<td width="97">&nbsp;</td>
+								<td align="right">
+                                    <asp:TextBox ID="txtBusca" Width="230px" runat="server"></asp:TextBox>
+                                         <cc1:AutoCompleteExtender ID="AutoCompleteExtenderDemo" 
+                                         CompletionListCssClass="AutoCompleteExtender_CompletionListItem"
+                                            runat="server"             
+                                            TargetControlID="txtBusca" 
+                                            ServicePath="WebService.asmx" 
+                                            ServiceMethod="RetornaNomeCliente"
+                                            MinimumPrefixLength="1"                                                                           
+                                            EnableCaching="false" >        
+                                        </cc1:AutoCompleteExtender>                                
+
+                                </td>
+								<td width="42">								
+                                    <asp:ImageButton ImageUrl="imagens/ok.png" ID="btnBusca" runat="server" 
+                                        width="27px" height="20px" onclick="btnBusca_Click" />
+								   
+                                
+                                </td>
+							</tr>
+						</table>
+                    
+
+						</td>
+                   <td>
+                       <table style="width:396px;height:38px;" border="0" cellspacing="0" cellpadding="0" >
+                           <tr>
+                               <td>
+                                   <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imagens/FACE.png" Width="100px" />
+                               </td>
+                               <td>
+                                   <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/imagens/TWITTER.png" Width="100px" />
+                               </td>
+                               <td>
+                                   <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/imagens/DICAS.png" Width="150px" />
+                               </td>
+                           </tr>
+                           </table>
+
+                   </td>
+                   <td>
+
+                   </td>
+               </tr>
+               </table>
+				
+			</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+<div align="center">
+   
+	<table class="tblBarraTopo3" border="0" width="100%" cellspacing="0" cellpadding="0" height="250" >
+		<tr>
+			<td>
+			<div align="center">
+				<table border="0" width="1020" cellspacing="0" cellpadding="0" height="250">
+					<tr>
+						<td valign="top" width="290">
+						<table border="0" width="1020" cellspacing="0" cellpadding="0" height="250">
+							<tr>
+								<td width="790" height="250" align="center" valign="center">
+                                    <!-- INICIO slide -->
+                                    <iframe runat="server" id="frmBannerMaior" width="790px" height="250px" frameborder='0' src="slidemaior.aspx"></iframe>
+                                    <!-- FIM slide -->
+                                   
+
+								</td>
+								<td width="290" height="250">
+								<table border="0" width="290" cellspacing="0" cellpadding="0" height="230" valign="top">
+									<tr>
+										<td width="290" height="10"></td>
+									</tr>
+									<tr>
+										<td width="290" height="80" align="center">
+                                            <asp:ImageButton ID="btnClubOfertas" runat="server" border="0"  
+                                                ImageUrl="imagens/BT_GUIA.png" width="268" height="75" 
+                                                onclick="btnClubOfertas_Click" OnClientClick="aspnetForm.target ='_blank';" />
+										</td>
+									</tr>
+									<tr>
+										<td width="290" height="80" align="center">
+                                           <asp:ImageButton ID="btnVitrineTema" runat="server" border="0" 
+                                                ImageUrl="imagens/BT_TEMA.png" width="268" height="75" 
+                                                onclick="btnVitrineTema_Click" OnClientClick="aspnetForm.target ='_blank';" />
+										</td>
+									</tr>
+									<tr>
+										<td width="290" height="80" align="center">
+                                           <asp:ImageButton ID="btnVitrineConvite" runat="server" border="0" ImageUrl="imagens/BT_CONVITE.png" width="268" height="75" onclick="btnVitrineConvite_Click"  OnClientClick="aspnetForm.target ='_blank';"/>
+										</td>
+									</tr>
+									<tr>
+										<td width="290" height="80" align="center">
+                                            <asp:ImageButton ID="btnOrcamento" runat="server" border="0"  
+                                                ImageUrl="imagens/BT_ORCAMENTO.png" width="268" height="75" 
+                                                onclick="btnClubOfertas_Click" OnClientClick="aspnetForm.target ='_blank';" />
+										</td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+			</td>
+		</tr>
+	</table>
+    &nbsp;</div>
+
+
+    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+    <ContentTemplate>
+<div align="center">
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>
+			<div align="center">
+				<table border="0" width="1020" cellspacing="0" cellpadding="0" height="10">
+					<tr>
+						<td width="1020" height="10"></td>
+					</tr>
+				</table>
+				<table border="0" width="1020" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="180" valign="top">
+                          
+                            
+						<table border="0" width="180" cellspacing="0" cellpadding="0">
+							<tr>
+								<td class="barraTopo">
+								</td>
+							</tr>
+							<tr>
+								<td class="barraMeio" background="imagens/barra_meio.png" valign="top">
+								<table border="0" width="180" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="barraVermelha" background="imagens/barra01.png" width="180" height="38" valign="top">
+										<p style="margin-left: 15px; margin-top: 8px; margin-bottom: 0">
+										<b>
+										<font face="Verdana" color="#FFFFFF" style="font-size: 9pt">
+										Locais para FESTAS</font></b></td>
+									</tr>
+								</table>
+                                <asp:Panel ID="pnMenu" runat="server">
+                                   <asp:GridView ID="grdMenuLocais" runat="server" GridLines="None" Width="180px"
+                                      ShowHeader="False" AutoGenerateColumns="False" BorderStyle="None" 
+                                        DataSourceID="" >
+                                       <RowStyle BorderStyle="None" />
+                                      <Columns>
+                                          <asp:TemplateField ItemStyle-HorizontalAlign="Left" >
+                                             <ItemTemplate>
+								                <table border="0" class="pontosCategoria" width="180" cellspacing="0" cellpadding="0" height="20" background="imagens/pontos_categoria.png">
+									                <tr>
+										                <td>
+                                                           <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoria_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>                                                           
+                                                        </td>
+									                </tr>
+								                </table>
+                                             </ItemTemplate>
+                                          </asp:TemplateField>
+                                      </Columns>
+                                   </asp:GridView>             
+                                </asp:Panel>      
+								
+
+							</tr>
+							<tr>
+								<td class="barraMeio" background="imagens/barra_meio.png" valign="top">
+								<table border="0" width="180" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="barraLaranja" background="imagens/barra02.png" width="180" height="38" valign="top">
+										<p style="margin-left: 15px; margin-top: 8px; margin-bottom: 0">
+										<b>
+										<font face="Verdana" color="#FFFFFF" style="font-size: 9pt">
+										Decoração de FESTAS</font></b></td>
+									</tr>
+								</table>
+                                <asp:Panel ID="Panel1" runat="server">
+                                    <asp:GridView ID="grdMenuDecoracao" runat="server" GridLines="None" Width="180px"
+                                        ShowHeader="False" AutoGenerateColumns="False" BorderStyle="None" 
+                                        DataSourceID="" >
+                                        <RowStyle BorderStyle="None" />
+                                        <Columns>
+                                            <asp:TemplateField ItemStyle-HorizontalAlign="Left" >
+                                                <ItemTemplate>
+								                <table class="pontosCategoria" border="0" width="180" cellspacing="0" cellpadding="0" height="20" background="imagens/pontos_categoria.png">
+									                <tr>
+										                <td>
+                                                           <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoria_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>										
+                                                        </td>
+									                </tr>
+								                </table>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                        </Columns>
+                                    </asp:GridView>             
+                                </asp:Panel>      
+
+
+
+							</tr>
+							<tr>
+								<td class="barraMeio" background="imagens/barra_meio.png" valign="top">
+								<table border="0" width="180" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="barraVerde" background="imagens/barra03.png" width="180" height="38" valign="top">
+										<p style="margin-left: 15px; margin-top: 8px; margin-bottom: 0">
+										<b>
+										<font face="Verdana" color="#FFFFFF" style="font-size: 9pt">
+										Alimentação</font></b></td>
+									</tr>
+								</table>
+                                <asp:Panel ID="Panel2" runat="server">
+                                   <asp:GridView ID="grdMenuAlimentacao" runat="server" GridLines="None" Width="180px"
+                                      ShowHeader="False" AutoGenerateColumns="False" BorderStyle="None" 
+                                        DataSourceID="" >
+                                       <RowStyle BorderStyle="None" />
+                                      <Columns>
+                                          <asp:TemplateField ItemStyle-HorizontalAlign="Left" >
+                                             <ItemTemplate>
+								                <table class="pontosCategoria" border="0" width="180" cellspacing="0" cellpadding="0" height="20" background="imagens/pontos_categoria.png">
+									                <tr>
+										                <td>									                  
+                                                           <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoria_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>										                                                           
+                                                        </td>
+									                </tr>
+								                </table>
+                                             </ItemTemplate>
+                                          </asp:TemplateField>
+                                      </Columns>
+                                   </asp:GridView>             
+                                </asp:Panel>      
+
+
+								</td>
+							</tr>
+							<tr>
+								<td class="barraMeio" background="imagens/barra_meio.png" valign="top">
+								<table border="0" width="180" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="barraAzul" background="imagens/barra04.png" width="180" height="38" valign="top">
+										<p style="margin-left: 15px; margin-top: 8px; margin-bottom: 0">
+										<b>
+										<font face="Verdana" color="#FFFFFF" style="font-size: 9pt">
+										Diversão para FESTAS</font></b></td>
+									</tr>
+								</table>
+                                <asp:Panel ID="Panel3" runat="server">
+                                   <asp:GridView ID="grdMenuDiversao" runat="server" GridLines="None" Width="180px"
+                                      ShowHeader="False" AutoGenerateColumns="False" BorderStyle="None" 
+                                        DataSourceID="" >
+                                       <RowStyle BorderStyle="None" />
+                                      <Columns>
+                                          <asp:TemplateField ItemStyle-HorizontalAlign="Left" >
+                                             <ItemTemplate>
+								                <table class="pontosCategoria" border="0" width="180" cellspacing="0" cellpadding="0" height="20" background="imagens/pontos_categoria.png">
+									                <tr>
+										                <td>									                  
+                                                           <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoria_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>										
+                                                        </td>
+									                </tr>
+								                </table>
+                                             </ItemTemplate>
+                                          </asp:TemplateField>
+                                      </Columns>
+                                   </asp:GridView>             
+                                </asp:Panel>      
+
+
+
+								</td>
+							</tr>
+							<tr>
+								<td class="barraMeio" background="imagens/barra_meio.png" valign="top">
+								<table border="0" width="180" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="barraRosa" background="imagens/barra05.png" width="180" height="38" valign="top">
+										<p style="margin-left: 15px; margin-top: 8px; margin-bottom: 0">
+										<b>
+										<font face="Verdana" color="#FFFFFF" style="font-size: 9pt">
+										Serviços para FESTAS</font></b></td>
+									</tr>
+								</table>
+                                <asp:Panel ID="Panel4" runat="server">
+                                   <asp:GridView ID="grdMenuServicos" runat="server" GridLines="None" Width="180px"
+                                      ShowHeader="False" AutoGenerateColumns="False" BorderStyle="None" 
+                                        DataSourceID="" >
+                                       <RowStyle BorderStyle="None" />
+                                      <Columns>
+                                          <asp:TemplateField ItemStyle-HorizontalAlign="Left" >
+                                             <ItemTemplate>
+								                <table class="pontosCategoria" border="0" width="180" cellspacing="0" cellpadding="0" height="20" background="imagens/pontos_categoria.png">
+									                <tr>
+										                <td>
+                                                           <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoria_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>										
+                                                        </td>
+									                </tr>
+								                </table>
+                                             </ItemTemplate>
+                                          </asp:TemplateField>
+                                      </Columns>
+                                   </asp:GridView>             
+                                </asp:Panel>      
+
+
+								</td>
+							</tr>
+							<tr>
+								<td class="barraMeio" background="imagens/barra_meio.png" valign="top">
+								<table border="0" width="180" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="barraAmarelo" background="imagens/barra06.png" width="180" height="38" valign="top">
+										<p style="margin-left: 15px; margin-top: 8px; margin-bottom: 0">
+										<b>
+										<font face="Verdana" color="#FFFFFF" style="font-size: 9pt">
+										Tipo de FESTAS</font></b></td>
+									</tr>
+								</table>
+                                <asp:Panel ID="Panel5" runat="server">
+                                   <asp:GridView ID="grdMenuTipo" runat="server" GridLines="None" Width="180px"
+                                      ShowHeader="False" AutoGenerateColumns="False" BorderStyle="None" 
+                                        DataSourceID="" >
+                                       <RowStyle BorderStyle="None" />
+                                      <Columns>
+                                          <asp:TemplateField ItemStyle-HorizontalAlign="Left" >
+                                             <ItemTemplate>
+								                <table class="pontosCategoria" border="0" width="180" cellspacing="0" cellpadding="0" height="20" background="imagens/pontos_categoria.png">
+									                <tr>
+										                <td>
+                                                           <asp:LinkButton CssClass="TituloBrancoa2" ID="lnkCategoria" CommandArgument='<%# Bind("codigo")%>' runat="server" OnClick="lnk_lnkCategoria_Click" Text='<%# Bind("Descricao")%>' ></asp:LinkButton>										
+                                                        </td>
+									                </tr>
+								                </table>
+                                             </ItemTemplate>
+                                          </asp:TemplateField>
+                                      </Columns>
+                                   </asp:GridView>             
+                                </asp:Panel>      
+
+
+								</td>
+							</tr>
+							<tr>
+								<td class="barraMeio" background="imagens/barra_meio.png" valign="top">
+								    <table border="0" width="180" cellspacing="0" cellpadding="0">
+									    <tr>
+										    <td class="barraRoxa" background="imagens/barra07.png" width="180" height="38" valign="top">
+										    <p style="margin-left: 15px; margin-top: 8px; margin-bottom: 0">
+										    <b>
+										    <font face="Verdana" color="#FFFFFF" style="font-size: 9pt">
+										    Painel de Controle</font></b></td>
+									    </tr>
+								     </table>
+                                    <table border="0" width="180" height="220" cellspacing="0" cellpadding="0" background="mytnr/fundousuario.png">
+							        <tr>
+								        <td align="center">
+								        <p style="margin-top: 5px; margin-bottom: 7px">
+								        <font face="Verdana" style="font-weight: 700" size="2">
+								        Login do Usuário</font></p>
+								        <p style="margin-top: 0; margin-bottom: 7px">
+								        <font face="Verdana" style="font-size: 9pt">
+								        Usuário:</font></p>
+								        <p style="margin-top: 0; margin-bottom: 7px">
+                                            <asp:TextBox ID="UserName" runat="server" Width="120px" CssClass="textEntry"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" 
+                                                 CssClass="failureNotification" ErrorMessage="Nome de usuario obrigatório." ToolTip="Nome de usuário obrigatório." 
+                                                 ValidationGroup="LoginUserValidationGroup">*</asp:RequiredFieldValidator>
+								
+                                        </p>
+								        <p style="margin-top: 0; margin-bottom: 7px">
+								        <font face="Verdana" style="font-size: 9pt">
+								        Senha:</font></p>
+								        <p style="margin-top: 0; margin-bottom: 7px">
+                                            <asp:TextBox ID="Password" runat="server" CssClass="passwordEntry" Width="120px" TextMode="Password"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" 
+                                                 CssClass="failureNotification" ErrorMessage="Senha é obrigatório." ToolTip="Senha é obrigatório." 
+                                                 ValidationGroup="LoginUserValidationGroup">*</asp:RequiredFieldValidator>
+								
+                                        </p>
+								        <p style="margin-top: 0; margin-bottom: 7px">
+                                            <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Login" 
+                                                ValidationGroup="LoginUserValidationGroup" onclick="LoginButton_Click"/>
+								
+                                        </p>
+								        <p style="margin-top: 0; margin-bottom: 7px">
+								        <font face="Verdana" style="font-size: 9pt">
+								        Esqueceu sua Senha?</font></td>
+							        </tr>
+						            </table>
+                                    <asp:Image ID="imgSejaCliente" runat="server" border="0" ImageUrl="imagens/seja_cliente.png" width="123" height="141" />
+								</td>
+							</tr>
+							<tr>
+								<td class="barraBase">
+								</td>
+							</tr>
+						</table>
+                          
+
+						</td>
+						<td width="620px" valign="top">
+   					    <div align="center">
+            
+
+                           <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                           </asp:ContentPlaceHolder>    
+
+						</div>
+						</td>
+						<td width="220" valign="top">
+						<div align="center">
+                            <asp:UpdatePanel ID="upBanner" UpdateMode="Conditional" runat="server">
+                            <ContentTemplate>
+
+                           <asp:DataList ID="dlPublicidade" runat="server"                                
+                               onitemdatabound="dlPublicidade_ItemDataBound" Width="210px" 
+                                    onitemcommand="dlPublicidade_ItemCommand">
+                              <ItemTemplate>
+                                <table style="width: 210px;">
+                                         <tr>
+                                             <td align="center" >                                                 
+                                                 <asp:Label ID="lblCodigoBanner" runat="server" Visible="false" Text=""></asp:Label>
+                                                <asp:Button ID="btnFAKE1" runat="server" Text="Fake Button" style="display: none;" /> 
+                                                <asp:LinkButton CssClass="link_fonesite" ID="aBanner" Text="" runat="server" CommandName="MostraBanner" >
+                                                    <asp:Image ID="imgBanner" runat="server" />
+                                                </asp:LinkButton>
+                                                <cc1:ModalPopupExtender ID="btnBanner_ModalPopupExtender" 
+                                                runat="server" BackgroundCssClass="ModalPopupBG" CancelControlID="btnFechar" 
+                                                Drag="True" DynamicServicePath="" Enabled="True" OnOkScript="onOk()" 
+                                                PopupControlID="pnBanner" TargetControlID="btnFAKE1">
+                                                </cc1:ModalPopupExtender>
+
+
+                                             </td>
+                                         </tr>
+                                 </table>                      
+                      
+                              </ItemTemplate>
+                           </asp:DataList>
+                           
+                           <div align="right" class="fb-like-box" data-href="https://www.facebook.com/guiadefestascuritiba" data-width="220" data-show-faces="true" data-stream="false" data-header="true"></div>						
+
+                            <asp:Panel ID="pnBanner" runat="server" BackColor="White" Height="600px" Width="800px">
+                                <table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+                                    <tr>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td align="right">
+                                            <asp:ImageButton ID="btnFechar" runat="server" 
+                                                ImageUrl="~/imagens/close.png" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" colspan="3">
+                                            <asp:HyperLink ID="lnkPublicidadeGrande" Target="_blank" runat="server">
+                                               <asp:Image ID="imgBannerPublicidadeGrande" runat="server" />
+                                            </asp:HyperLink>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>                   
+
+                        <cc1:RoundedCornersExtender ID="pnAnuncioCategoria_RoundedCornersExtender" 
+                            runat="server" Color="ActiveBorder" Enabled="True" 
+                            TargetControlID="pnBanner">
+                        </cc1:RoundedCornersExtender>
+
+                            </ContentTemplate>
+                            </asp:UpdatePanel>
+
+                        <asp:UpdateProgress ID="uProgBanner" runat="server" 
+                            AssociatedUpdatePanelID="upBanner">
+                            <ProgressTemplate>
+                               <div class="overlay" />
+                                <div class="overlayContent">
+                                    <h2>Aguarde...</h2>
+                                    <asp:Image CssClass="aguarde" ID="imgAguarde" ImageUrl='<% Page.ResolveUrl("~/imagens/wait.gif") %>' runat="server" />
+                                </div>
+            
+                            </ProgressTemplate>
+                        </asp:UpdateProgress>
+
+                        	
+						</div>
+						</td>
+					</tr>
+				</table>
+				<p style="margin-top: 0; margin-bottom: 0">&nbsp;</div>
+			</td>
+		</tr>
+	</table>
+</div>
+    </ContentTemplate>
+    </asp:UpdatePanel>
+
+
+
+<div align="center">
+	<table class="tblBarraTopo3" border="0" width="100%" cellspacing="0" cellpadding="0" height="250" background="imagens/barra_topo_3.jpg">
+		<tr>
+			<td>
+			<div align="center">
+				<table border="0" width="1020" cellspacing="0" cellpadding="0" height="250">
+					<tr>
+						<td valign="top">
+			<div align="center">
+				<table border="0" width="1020" cellspacing="0" cellpadding="0" height="250">
+					<tr>
+						<td valign="top">
+						<table border="0" width="1020" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="1020" height="35">
+								<table border="0" width="1020" cellspacing="0" cellpadding="0" height="35">
+									<tr>
+										<td width="35">
+                                           <asp:Image ID="medidor2" runat="server" border="0" ImageUrl="imagens/medidor_verde.png" width="22" height="31" />										
+										</td>
+										<td>
+                                        <a href="TvOnline" style="text-decoration:none">
+                                        <b>
+                                        <font face="Verdana">
+										<font style="font-size: 15pt" color="#666666">
+										TV ON-LINE</font>
+                                        <font color="#808080">&nbsp; 
+										GUIA DE FESTAS CURITIBA<font size="2">
+										</font></font></font></b>
+                                        </a>
+
+                                        <i>
+										<font size="2" face="Verdana" color="#808080">
+										[ Clientes Vídeo Empresa + Dicas + 
+										Cursos + Festas ]</font></i>                                                                                
+                                        </td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="1020" height="215">
+								<div align="center">
+                                                <asp:UpdatePanel ID="upVideo" UpdateMode="Conditional" runat="server">
+                                                <ContentTemplate>
+
+                                       <table border="0" width="1020" cellspacing="0" cellpadding="0" height="205" bgcolor="#CCCDD0">
+										<tr>
+											<td width="90">
+											<p align="center">
+											<asp:LinkButton id="lnkAnterior" runat="server" CssClass="navega" onclick="lnkAnterior_Click">
+                                               <asp:Image ID="imgPlayDir" runat="server" border="0" width="70" height="70" ImageUrl="imagens/play_dir.png" />
+                                            </asp:LinkButton>
+                                            </td>
+											<td width="840">
+                                                <p>
+                                                    <table border="0" width="840" cellspacing="0" cellpadding="0" height="190">
+												    <tr>
+                                                    <td align="center" valign="top">
+                                                        <asp:DataList ID="dlVideo" runat="server"  
+                                                            RepeatDirection="Horizontal"          
+                                                            onitemdatabound="dlVideo_ItemDataBound"          
+                                                            onitemcommand="dlVideo_ItemCommand" CellSpacing="5">
+                                                            <ItemTemplate>
+                                                                <asp:LinkButton CssClass="link_fonesite" ID="aBanner" CommandArgument='<%# Eval("codigo") %>' Text="" runat="server" CommandName="MostraVideo" >
+                                                                    <asp:Image ID="imgVideo" runat="server" width="190" height="153" />
+                                                                </asp:LinkButton>
+                                                            </ItemTemplate>
+                                                        </asp:DataList>
+                                                    </td>
+												    </tr>
+											    </table>
+
+                                                </p>
+
+                               
+	                                        </td>
+											<td width="90">
+											<p align="center">
+                                            <asp:LinkButton id="lnkProximo" runat="server" CssClass="navega"  onclick="lnkProximo_Click">
+                                                <asp:Image ID="imgPlayEsq" runat="server" border="0" width="70" height="70" ImageUrl="imagens/play_esq.png" />
+                                            </asp:LinkButton>
+                                            
+                                            </td>
+										</tr>
+									</table>
+
+
+
+                                                   </ContentTemplate>
+                                                   </asp:UpdatePanel>
+
+
+                          
+
+								</div>
+
+
+                                
+                                   
+
+								</td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div align="center">
+	<table border="0" width="100%" cellspacing="0" cellpadding="0" height="315" bgcolor="#666666" background="layout/barra_topo_3.jpg">
+		<tr>
+			<td>
+			<div align="center">
+				<table border="0" width="1020" cellspacing="0" cellpadding="0" height="250">
+					<tr>
+						<td valign="top">
+						<div align="center">
+							<div align="center">
+								<table border="0" width="1020" cellspacing="0" cellpadding="0" height="250">
+									<tr>
+										<td valign="top" align="left">
+										<p style="margin-top: 6px; margin-bottom: 6px">
+										<b>
+										<font face="Verdana" color="#999999" style="font-size: 11pt">
+										Guias On-line</font></b></p>
+                                          <table style="width:289px;" border="0" cellspacing="0" cellpadding="0">
+                                           <tr>
+                                               <td align="left">
+					                                <p style="margin-top: 0; margin-bottom: 6px">
+                                                       <a href="Index.aspx" style="text-decoration:none">
+                                                          <asp:Label CssClass="seta" ID="Label7" runat="server" Text="}"></asp:Label>
+                                                          <font face="Verdana" size="2" color="#CCCCCC"> Guia de Festas 
+                                                          </font>
+                                                       </a>
+                                                    </p>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                                  <a href="tema.aspx" style="text-decoration:none">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label8" runat="server" Text="}"></asp:Label>
+                                                    <font face="Verdana" size="2" color="#CCCCCC"> Vitrine Temas Infantis </font></p>
+                                                  </a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                                  <a href="convite.aspx" style="text-decoration:none">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label9" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Vitrine Convites e Lembrancinhas </font>
+                                                    </p>
+                                                  </a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                                  <a href="oferta.aspx" style="text-decoration:none">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label10" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Clube de Ofertas </font>
+                                                    </p>
+                                                  </a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                                  <a href="tvOnline.aspx" style="text-decoration:none">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label11" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> TV Online Guia de Festas</font>
+                                                    </p>
+                                                  </a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           </table>
+
+
+										</td>
+										<td valign="top" align="left">
+										<p style="margin-top: 6px; margin-bottom: 6px">
+										<b>
+										<font face="Verdana" color="#999999" style="font-size: 11pt">
+										Sobre o Guia</font></b></p>
+
+                                           <table style="width:289px;" border="0" cellspacing="0" cellpadding="0">
+                                           <tr>
+                                               <td align="left">
+                                                    <a href="quemsomos.aspx" style="text-decoration:none">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label14" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Quem Somos</font>
+                                                    </p>
+                                                    </a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                                    <a href="comofunciona.aspx" style="text-decoration:none">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label15" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Como Funciona</font>
+                                                    </p>
+                                                    </a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                                    <a href="politica.aspx" style="text-decoration:none">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label16" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Política de Privacidade</font>
+                                                    </p>
+                                                    </a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           </table>
+
+										</td>
+										<td valign="top" align="left">
+										<p style="margin-top: 6px; margin-bottom: 6px">
+										<b>
+										<font face="Verdana" color="#999999" style="font-size: 11pt">
+										Área de Anunciante</font></b></p>
+
+                                           <table style="width:289px;" border="0" cellspacing="0" cellpadding="0">
+                                           <tr>
+                                               <td align="left">
+                                                    <a href="comoanunciar.aspx" style="text-decoration:none">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label25" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Como Anunciar</font>
+                                                    </p>
+                                                    </a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                                    <a href="cadastro_anuncio.aspx" style="text-decoration:none">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label26" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Efetuar Cadastro</font>
+                                                    </p>
+                                                    </a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label27" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Alterar Anuncio</font>
+                                                    </p>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           </table>
+
+										</td>
+										<td valign="top" align="left">
+										<p style="margin-top: 6px; margin-bottom: 6px">
+										<b>
+										<font face="Verdana" color="#999999" style="font-size: 11pt">
+										Contato</font></b></p>
+
+
+                                           <table style="width:289px;" border="0" cellspacing="0" cellpadding="0">
+                                           <tr>
+                                               <td align="left">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+                                                    <a href="contato.aspx" style="text-decoration:none">
+										            <asp:Label CssClass="seta" ID="Label29" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Enviar uma mensagem</font>
+                                                    </a>
+                                                    </p>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+										            <p style="margin-top: 0; margin-bottom: 6px">
+										            <asp:Label CssClass="seta" ID="Label30" runat="server" Text="}"></asp:Label><font face="Verdana" size="2" color="#CCCCCC"> Solicitar Orçamento</font>
+                                                    </p>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           <tr>
+                                               <td align="left">
+					                                &nbsp;</td>
+                                           </tr>
+                                           </table>
+
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						</td>
+					</tr>
+				</table>
+			<div align="center">
+				<table border="0" width="100%" cellspacing="0" cellpadding="0" height="65" bgcolor="#C0C0C0">
+					<tr>
+						<td align="center">
+						<font face="Verdana" color="#666666" style="font-size: 9pt; font-weight: 700">
+						GRUPO</font><font face="Verdana" style="font-size: 11pt" color="#666666">
+						</font><font face="Verdana" color="#666666"><b>TNR</b></font><font face="Verdana" style="font-size: 11pt" color="#666666">
+						</font>
+						<font face="Verdana" color="#666666" style="font-size: 9pt">
+						- Soluções em internet</font><font face="Verdana" style="font-size: 9pt" color="#666666"><b>&nbsp;&nbsp;&nbsp;&nbsp;
+						</b></font><font face="Verdana" color="#A2A2A2"><b>|</b></font><font face="Verdana" color="#A2A2A2" style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;
+						</font>
+						<font face="Verdana" style="font-size: 9pt" color="#666666">
+						Tel. +55 41 </font><font face="Verdana" color="#666666">
+						<b>3408-4904 / 3501-7206</b></font></td>
+					</tr>
+				</table>
+			</div>
+			</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+    </form>
+</body>
+</html>

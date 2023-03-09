@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Cliente.master.cs" Inherits="Cliente" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Painel de Controle Cliente - Guia de Festas Curitiba</title>
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+       BODY
+       {
+          background-color:White;
+       }
+        
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <center>
+           <table style="width:800px;" border="0" cellpadding="0" cellspacing="0">
+               <tr>
+                   <td align="center">
+                      <div id="menu" style="width:800px; height:150px;">                          
+                         <ul>                             
+                            <li><asp:LinkButton ID="lbtnAgenda" runat="server" onclick="lbtnAgenda_Click" Font-Names="Arial" Font-Size="12px" ForeColor="#990000">Agenda</asp:LinkButton></li>
+
+                                    
+                         </ul>
+                      </div>
+                   
+                   </td>
+               </tr>
+               <tr>
+                   <td align="center">
+                     
+
+                            <asp:ContentPlaceHolder id="MainContent" runat="server">
+        
+                            </asp:ContentPlaceHolder>
+
+                   
+                   </td>
+               </tr>
+               <tr>
+                   <td align="center">
+                     
+                   </td>
+               </tr>
+               <tr>
+                   <td align="center">
+                       <asp:Label ID="lblHash" runat="server"></asp:Label>
+                   </td>
+               </tr>
+               </table>
+
+    </center>
+    </div>
+
+    </form>
+</body>
+</html>

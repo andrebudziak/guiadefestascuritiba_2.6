@@ -1,0 +1,226 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DirectoryS v1.0.0\n"
+"POT-Creation-Date: 2013-12-11 08:54+0200\n"
+"PO-Revision-Date: 2014-09-23 16:05+0200\n"
+"Last-Translator: Adrian Holobut <adrian.holobut@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"Language-Team: Holobest <holobest.themes@gmail.com>\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: Spanish/Español\n"
+
+###########################
+######## General ##########
+###########################
+
+msgid "Date"
+msgstr ""
+
+msgid "Rating"
+msgstr ""
+
+msgid "By"
+msgstr ""
+
+msgid "No Items"
+msgstr ""
+
+msgid "Showing"
+msgstr ""
+
+msgid "of"
+msgstr ""
+
+msgid "Items"
+msgstr ""
+
+msgid "Count"
+msgstr ""
+
+msgid "Sort by"
+msgstr ""
+
+msgid "Sort"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "Prev"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Posted By"
+msgstr ""
+
+msgid "Comments are disabled"
+msgstr ""
+
+msgid "Comments are not allowed"
+msgstr ""
+
+msgid "Contact"
+msgstr ""
+
+msgid "Opening hours"
+msgstr ""
+
+msgid "Monday"
+msgstr ""
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Thurstday"
+msgstr ""
+
+msgid "Friday"
+msgstr ""
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Sunday"
+msgstr ""
+
+msgid "Thank you for your rating"
+msgstr ""
+
+msgid "You have already rated this site"
+msgstr ""
+
+msgid "Submit rating"
+msgstr ""
+
+msgid "File Not Found"
+msgstr ""
+
+msgid "Sorry, the page you are looking for doesn't exist. Take a run around the block or tap the button below."
+msgstr ""
+
+msgid "Back to home"
+msgstr ""
+
+msgid "No Rating Yet"
+msgstr ""
+
+##############################
+######## Search Bar ##########
+##############################
+
+msgid "All Locations"
+msgstr ""
+
+msgid "All Categories"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Search keyword here"
+msgstr ""
+
+msgid "Search for"
+msgstr ""
+
+#########################
+######## Forms ##########
+#########################
+msgid "Login"
+msgstr ""
+
+msgid "Register"
+msgstr ""
+
+msgid "Send"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Website"
+msgstr ""
+
+msgid "Your privacy is important to us and we will never rent or sell your information"
+msgstr ""
+
+msgid "We are going to send you a password on your e-mail"
+msgstr ""
+
+##############################
+######## Comments ############
+##############################
+msgid "One Comment"
+msgstr ""
+
+msgid "No comments"
+msgstr ""
+
+msgid "Comments"
+msgstr ""
+
+msgid "Reply"
+msgstr ""
+
+msgid "Leave a reply"
+msgstr ""
+
+msgid "Logged in as %s"
+msgstr ""
+
+msgid "Log in"
+msgstr ""
+
+msgid "Log out"
+msgstr ""
+
+msgid "Cancel reply"
+msgstr ""
+
+msgid "Post Comment"
+msgstr ""
+
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+msgid "at"
+msgstr ""
+
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+msgid "Your email is %1$snever%2$s published nor shared."
+msgstr ""
+
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr ""
+
+msgid "Required fields are marked %1$s*%2$s"
+msgstr ""
+
+msgid "Post a Reply to %s"
+msgstr ""

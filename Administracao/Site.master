@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>MyTNR</title>
+    <link href="Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" bgcolor="#E9EAEA">
+<form id="Form1" runat="server">
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="150" background="mytnr/barra1.png">
+	<tr>
+		<td>
+		<div align="center">
+			<table border="0" width="800" cellspacing="0" cellpadding="0" height="150">
+				<tr>
+					<td width="400">
+					<img border="0" src="mytnr/logotem.png" width="300" height="105"></td>
+					<td width="400">
+					<p align="right">
+					<img border="0" src="mytnr/logo.png" width="200" height="56"></td>
+				</tr>
+			</table>
+		</div>
+		</td>
+	</tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+	<tr>
+		<td>
+		<div align="center">	
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+		</div>
+		</td>
+	</tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="25" background="mytnr/barra2.png">
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<p align="center" style="margin-top: 10px; margin-bottom: 0">
+<font face="Verdana" size="2">@ 2011 - myTNR - Todos os direito reservados</font></p>
+<p align="center" style="margin-top: 0; margin-bottom: 0">
+<font face="Verdana" size="2">
+<a href="mailto:suporte@mytnr.com.br" style="text-decoration: none">
+<font color="#000000">suporte@mytnr.com.br</font></a></font></p>
+<p align="center" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+</form>
+</body>
+
+</html>

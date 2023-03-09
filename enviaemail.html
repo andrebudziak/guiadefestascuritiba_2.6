@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+<body>
+   <div>
+  <form action="http://www.guiadefestascuritiba.com.br/enviaemail.aspx" method="post">
+   <table width="40%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+     <td> 
+      Nome:<br/>
+      <input name="nomeremetente" type="text" size="100" id="nome"/>
+      
+      <br/>
+      E-mail(*):<br>
+      <input name="emailcontato" type="text" size="100"/>
+      <br/>Assunto:<br/>
+      <input name="assunto" type="text" id="assunto" size="100"/>
+      <br/>
+      Mensagem:<br/>
+ 
+      <textarea name="mensagem" cols="75" rows="5" id="textarea"></textarea>
+      <br/>
+      <input type="submit" name="Submit" value="Enviar"/>
+      <input type="reset" name="limpar" value="Limpar"/>
+
+
+
+      <!--Campos escondidos para configurar o smtp que envia o email-->
+      <input name="emailsmtp" type="hidden" id="emailsmtp" value="contato@guiadefestascuritiba.com.br"/>
+      
+      <input name="smtp" type="hidden" id="smtp" value="smtp.guiadefestacuritiba.com.br"/>
+      <input name="senhasmtp" type="hidden" id="senhasmtp" value="ct@guia"/>
+
+     </td>
+    </tr>
+    </table>
+  </form>
+   
+   
+        
+    
+  
+   </div>
+</body>
+</html>

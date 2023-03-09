@@ -1,0 +1,882 @@
+BODY
+{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    background-color: #FFFFFF;
+}
+
+.ListBusca
+{
+    FONT-SIZE: 11px;
+    WIDTH: 135px;
+    COLOR: #666666;
+    FONT-FAMILY: tahoma;
+    BACKGROUND-COLOR: #f0f0f0
+}
+.ListBusca2
+{
+    FONT-SIZE: 11px;
+    WIDTH: 250px;
+    COLOR: #666666;
+    FONT-FAMILY: tahoma;
+    BACKGROUND-COLOR: #f0f0f0
+}
+
+.ListAnunciantes
+{
+    FONT-SIZE: 11px;
+    COLOR: #666666;
+    FONT-FAMILY: tahoma;
+    BACKGROUND-COLOR: #f0f0f0
+}
+.TextBusca
+{
+    BORDER-TOP-WIDTH: 1px;
+    BORDER-LEFT-WIDTH: 1px;
+    FONT-SIZE: 11px;
+    BORDER-LEFT-COLOR: #999999;
+    BORDER-BOTTOM-WIDTH: 1px;
+    BORDER-BOTTOM-COLOR: #999999;
+    WIDTH: 135px;
+    COLOR: #666666;
+    BORDER-TOP-COLOR: #999999;
+    FONT-FAMILY: tahoma;
+    BACKGROUND-COLOR: #f0f0f0;
+    BORDER-RIGHT-WIDTH: 1px;
+    BORDER-RIGHT-COLOR: #999999
+}
+.TextAreaContrato
+{
+    BORDER-RIGHT: #cccccc 1px solid;
+    BORDER-TOP: #cccccc 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #cccccc 1px solid;
+    WIDTH: 460px;
+    COLOR: #333333;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    FONT-STYLE: normal;
+    FONT-FAMILY: tahoma;
+    BACKGROUND-COLOR: #f5f5f5
+}
+.TextCadastro
+{
+    BORDER-RIGHT: #cccccc 1px solid;
+    BORDER-TOP: #cccccc 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #cccccc 1px solid;
+    WIDTH: 280px;
+    COLOR: #333333;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    FONT-STYLE: normal;
+    FONT-FAMILY: tahoma;
+    HEIGHT: 19px;
+    BACKGROUND-COLOR: #f5f5f5
+}
+
+.BotaoSubmit
+{
+    border: 1px solid #cccccc;
+    FONT-WEIGHT: bold;
+        FONT-SIZE: 11px;
+        COLOR: #333333;
+        FONT-STYLE: normal;
+        FONT-FAMILY: tahoma;
+        BACKGROUND-COLOR: #dddddd;
+	height: 19px;
+}
+.TituloBranco
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+    COLOR: #ffffff;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TextoCinzaMascara
+{
+    FONT-SIZE: 11px;
+    COLOR: #cccccc;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TextoCinzaMascara2
+{
+    FONT-SIZE: 10px;
+    COLOR: #cccccc;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TextoCinzaMascara2B
+{
+    FONT-SIZE: 10px;
+    COLOR: #999999;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TextoCinzaMedio
+{
+    FONT-SIZE: 11px;
+    COLOR: #6b7176;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TextoCinzaMedioPeq
+{
+    FONT-SIZE: 10px;
+    COLOR: #6b7176;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TextoCinzaEscuro
+{
+    font-size: 10pt;
+    color: #293743;
+    font-family: Verdana;
+    text-decoration: none;
+}
+.TextoCinzaEscuro2
+{
+    font-size: 8pt;
+    color: #293743;
+    font-family: Verdana;
+    text-decoration: none;
+}
+.TextoCinzaEscuro3
+{
+    FONT-SIZE: 8pt;
+    COLOR: #293743;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none;
+    height:2px;    
+}
+.TituloCinzaClaro
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #7a8085;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TituloCinzaMedio
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #6b7176;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TituloCinzaMedioPeq
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #6b7176;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TituloCinzaEscuro
+{
+    margin:0;
+    padding:0;    
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: Black;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none;
+    height:2px;
+}
+.TituloCinzaEscuro2
+{
+    margin:0;
+    padding:0;        
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: Black;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none;
+    height:1px;
+    
+}
+.TituloCinzaEscuro3
+{
+    margin:0;
+    padding:0;        
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: Black;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none;
+    height:1px;
+    
+}
+.TextoAzulEscuro
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: tahoma;
+    TEXT-DECORATION: none
+}
+.TituloAzulEscuro
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana;
+    TEXT-DECORATION: none
+}
+.TituloVermelho
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: #ff0000;
+	font-family: arial;
+	text-decoration: none;
+}
+.TituloBranco2
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #606060;
+    font-family: Verdana;
+    text-decoration: none;
+    font-style: normal;
+}
+.TituloBranco2:hover
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-family: Verdana;
+    text-decoration: none;
+    font-style: normal;
+    background-color: #FF6600;
+}
+
+.TituloBrancoa2
+{
+    font-weight: normal;
+    font-size: 9pt;
+    color: #666666;
+    font-family: Verdana;
+    text-decoration: none;
+    font-style: normal;
+    padding-left:11px;
+}
+.TituloBrancoa2:hover
+{
+    font-weight: normal;
+    font-size: 9pt;
+    color: #666666;
+    font-family: Verdana;
+    text-decoration: underline;
+    font-style: normal;
+    padding-left: 11px;
+}
+
+
+.TituloBranco3
+{
+    font-weight: normal;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-family: Verdana;
+    text-decoration: none;
+    background-image: url(  'imagens/menuselecao.gif' );
+}
+
+.BordaNoticias
+{
+    BORDER-RIGHT: #bebebe 1px solid;
+    BORDER-TOP: #bebebe 1px solid;
+    BORDER-LEFT: #bebebe 1px solid;
+    BORDER-BOTTOM: #bebebe 1px solid
+}
+.BordaAnuncios
+{
+    BORDER-RIGHT: #525252 1px solid;
+    BORDER-TOP: #525252 1px solid;
+    BORDER-LEFT: #525252 1px solid;
+    BORDER-BOTTOM: #525252 1px solid
+}
+.TextoVermelho
+{
+	font-size: 11px;
+	color: red;
+	font-family: Arial;
+	text-decoration: none;
+}
+.logo
+{
+    width: 146px;
+    height: 104px;
+    vertical-align: top;
+    position: absolute;
+}
+.anunciante
+{
+   width:234;
+   height:104;
+   vertical-align:middle;    
+   
+}
+.tbl_anunciante
+{
+    
+}
+.TextoSite
+{
+   margin:0;
+   padding:0;    
+   width:100;    
+}
+
+.bord-baixa
+{
+    background-color: #CCCCCC;
+}
+
+.bonus
+{
+    position:fixed;
+    top: 0px;
+    left:0px;
+}
+
+.panel
+{
+    background-color: #FF0000;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+ #UpdateProgress1
+{
+    border: medium solid #FF0000;
+    background-color: #FFFFFF;
+    color: #FF0000;
+    top: 50%;
+    right: 45%;
+    position: fixed;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#UpdateProgress1 img
+ {
+   vertical-align:middle;
+   margin:2px;
+ }
+ 
+ #UpdateProgress2
+{
+    border: 2px solid #FF9900;
+    background-color: #FFFFFF;
+    color: #FF9900;
+    top: 50%;
+    right: 45%;
+    position: fixed;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#UpdateProgress2 img
+ {
+   vertical-align:middle;
+   margin:2px;
+ }
+ 
+ 
+.ModalPopupBG
+{
+    background-color: #FF9900;
+    filter: alpha(opacity=40);
+    opacity: 0.7;    
+}    
+
+
+#menu ul 
+{
+padding:0px;
+margin:0px;
+float: left;
+width: 100%;
+background-color:#EDEDED;
+list-style:none;
+}
+
+
+#menu ul li a 
+{
+padding: 2px 10px;
+float:left;
+/* visual do link */
+background-color:#EDEDED;
+color: #333;
+text-decoration: none;
+border-bottom:3px solid #EDEDED;
+}
+
+#menu ul li a:hover
+{
+	background-color: #D6D6D6;
+	color: #6D6D6D;
+	border-bottom: 3px solid #EA0000;
+	border-bottom-color: #FF0000;
+}
+
+
+.deletar
+{
+	font-size: 11px;
+	color: red;
+	font-family: Arial;
+	text-decoration: underline;
+}
+.deletar:hover
+{
+	font-size: 11px;
+	color: red;
+	font-family: Arial;
+}
+
+.modalBackground
+{
+	background-color: #E8E8E8;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+	
+}
+
+
+
+.AutoCompleteExtender_CompletionListItem
+{
+    margin: 0px !important;
+    background-color: white;
+    text-align: left;
+    color: windowtext;
+    font-size: 12px;
+    background-color: #FF9900;
+    z-index: 200;
+    width: 100px;
+    font-family: Verdana;
+}
+
+
+.TituloUsuario
+{
+    font-weight: normal;
+    font-size: 11px;
+    color: #606060;
+    font-family: Verdana;
+    text-decoration: none;
+    font-style: normal;
+}
+.TituloUsuario:hover
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: #808080;
+	font-family: Verdana;
+	text-decoration: none;
+	font-style: normal;
+	background-color: #E8E8E8;
+}
+
+.edit
+{
+	font-family: Arial;
+	font-size: 11px;
+	color: #F09100;
+	border-left: 1px solid #000080;
+	border-right: 1px solid #C0C0C0;
+	border-top: 1px solid #000080;
+	border-bottom: 1px solid #C0C0C0;
+}
+.edit:hover
+{
+	font-family: Arial;
+	font-size: 11px;
+	color: #F29200;
+	background-color: #FFEFD7;
+	border-left: 1px solid #000080;
+	border-right: 1px solid #C0C0C0;
+	border-top: 1px solid #000080;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.label_chat
+{
+    font-family: Arial;
+    font-size: 11px;
+    color: #F09100;
+}
+
+.lista_chat
+{
+    font-family: Arial;
+    font-size: 12px;
+    color: #000000;
+    border-left: 1px solid #000080;
+    border-right: 1px solid #C0C0C0;
+    border-top: 1px solid #000080;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.falar_com
+{
+    font-family: Arial;
+    font-size: 12px;
+    color: #6F6F6F;
+    border-left: 1px solid #000080;
+    border-right: 1px solid #C0C0C0;
+    border-top: 1px solid #000080;
+    border-bottom: 1px solid #C0C0C0;
+    font-weight: bold;
+}
+
+.texto_area_chat
+{
+    font-family: Arial;
+    font-size: 12px;
+    color: #808080;
+}
+
+/* Accordion */
+.accordionHeader
+{
+    border-style: dotted none none none;
+    color: #666666;
+    background-color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-top-width: 3px;
+    border-top-color: #666666;
+}
+.accordionHeaderSelected
+{
+    border: 1px solid #F09100;
+    color: #000000;
+    background-color: #FFBD59;
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.accordionContent
+{
+    background-color: #FFFFFF;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+    border-style: none;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-color: #666666;
+    border-bottom-color: #666666;
+}
+
+
+
+/* Menu Principal
+----------------------------------------------------------*/
+#menuP
+{
+    width: 50px;
+    height:50px;
+    float: left;
+}
+
+#menuP ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#menuP a, #menu h2
+{
+    display: block;
+    margin: 0;
+    padding: 2px 3px;
+    font-family: Verdana;
+    font-size: 9pt;
+    
+}
+
+#menuP h2
+{
+    color: #000000;
+    font-family: Verdana;
+    font-size: 9pt;
+}
+
+#menuP h3
+{
+    color: #000000;
+    text-transform: uppercase;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: #D3D3D3;
+    height: 10px;
+}
+
+
+#menuP a
+{
+    color: #666666;
+    font-family: verdana;
+    font-size: 9pt;
+    text-decoration: none;
+}
+
+#menuP a:hover
+{
+    color: #666666;
+    text-decoration: underline;
+    font-family: verdana;
+    font-size: 9pt;
+}
+
+#menuP li {position: relative;}
+
+.item_menuP
+{
+    background-color: transparent;     
+}
+
+.item_menuP:hover
+{
+    background-color: #ffe61a;
+    height:50px;
+}
+
+#menuP ul ul
+{
+    position: absolute;
+    z-index: 500;
+}
+
+#menuP ul ul ul
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+div#menuP ul ul,
+
+div#menuP ul li:hover ul ul,
+
+div#menuP ul ul li:hover ul ul
+
+{display: none;}
+
+
+div#menuP ul li:hover ul,
+
+div#menuP ul ul li:hover ul,
+
+div#menuP ul ul ul li:hover ul
+
+{display: block;}
+
+/* Fim Menu
+----------------------------------------------------------*/
+
+.tblBarraTopo
+{
+    background-image: url('imagens/barra_topo_1.jpg') !important;
+}
+
+.tblBarraTopo2
+{
+    background-image: url('imagens/barra_topo_2.jpg');
+    background-repeat: repeat-x;
+    height:65px;
+    width:100%;
+}
+
+.tblBarraTopo3
+{
+    
+    
+}
+
+.tblPesquisar
+{
+    background-image: url('imagens/pesquisar.png') !important;
+    height:38px;
+    width:396px;
+}
+
+.tblpontosCategoria
+{
+   background-image: url('imagens/pontilhado_categoria.png') !important;        
+}
+
+.barraTopo
+{
+   background-image: url('imagens/barra_topo.png') !important;    
+   width:174px;
+   height:10px;
+}
+
+.barraVermelha
+{
+   background-image: url('imagens/barra01.png') !important;    
+   width:180px;
+   height:38px;
+}
+
+.barraLaranja
+{
+   background-image: url('imagens/barra02.png') !important;    
+   width:180px;
+   height:38px;
+}
+
+.barraVerde
+{
+   background-image: url('imagens/barra03.png') !important;    
+   width:180px;
+   height:38px;
+}
+
+.barraAzul
+{
+   background-image: url('imagens/barra04.png') !important;    
+   width:180px;
+   height:38px;
+}
+
+.barraRosa
+{
+   background-image: url('imagens/barra05.png') !important;    
+   width:180px;
+   height:38px;
+}
+
+.barraAmarelo
+{
+   background-image: url('imagens/barra06.png') !important;    
+   width:180px;
+   height:38px;
+}
+
+.barraRoxa
+{
+   background-image: url('imagens/barra07.png') !important;    
+   width:180px;
+   height:38px;
+}
+
+.barraMeio
+{
+   background-image: url('imagens/barra_meio.png') !important;    
+}
+
+.barraBase
+{
+   background-image: url('imagens/barra_base.png') !important;    
+   width:180px;
+   height:11px;   
+}
+
+.pontosCategoria
+{
+   background-image: url('imagens/pontos_categoria.png') !important;        
+}
+
+@font-face {
+    font-family: "Wingdings 3";
+    src: url(WINGDNG3.TTF);
+}
+.seta
+{
+    font-family: "Wingdings 3";
+    font-size: 12px;
+    color: #CCCCCC;
+}
+
+.img_telefone
+{
+   background-image: url('imagens/telefone.png') !important;    
+   width:6px;   
+   height:20px;
+}
+
+.link_fonesite
+{
+   font-family:Verdana;
+   font-size:12px;    
+   font-weight:bold;
+   color:#808080;    
+}
+
+.link_fonesite:hover
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    color: #808080;
+    text-decoration: underline;
+}
+
+.tblBarraCentralCategoria
+{
+    background-image: url('imagens/barra_central_categoria.png');
+    height:58px;
+}
+
+        .overlay
+        {
+          position: fixed;
+          z-index: 98;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+            background-color: #FF9900;
+            filter: alpha(opacity=80);
+            opacity: 0.8;
+        }
+        .overlayContent
+{
+    border: 2px solid #FF9900;
+    z-index: 99;
+    margin: 250px auto;
+    width: 300px;
+    height: 150px;
+    background-color: #FFFFFF;
+}
+        .overlayContent h2
+        {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+        .overlayContent img
+        {
+          background-image: url('imagens/wait.gif');
+        }
+
+        .aguarde
+        {
+          background-image: url('imagens/wait.gif');
+        }
+
+
+
+
+

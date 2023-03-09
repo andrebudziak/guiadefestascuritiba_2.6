@@ -1,0 +1,52 @@
+/*
+Theme Name: DirectoryS
+Theme URI: http://themeforest.net/user/holobest/portfolio
+Description: Listings WordPress Theme
+Author: Holobest
+Author URI: http://themeforest.net/user/holobest
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl.html
+Version: 1.2.1
+*/
+
+.wp-caption {
+    max-width: 100%;
+}
+
+.wp-caption-text {}
+.sticky {}
+.gallery-caption {}
+.bypostauthor {}
+
+.alignright {
+    display: block;
+    float: right;
+    margin: 3px 0 0 10px;
+}
+
+.size-full {
+    max-width: 100%;
+    height: auto;
+}
+
+.alignleft {
+    display: block;
+    float: left;
+    margin: 3px 10px 0 0;
+}
+
+.aligncenter {
+    display: block;
+    clear: both;
+    margin: 10px auto;
+}
+
+.admin-bar #header-container {
+    padding-top: 28px !important;
+}
+
+@media (max-width: 979px) {
+    .admin-bar #header-container {
+        padding-top: 0 !important;
+    }
+}

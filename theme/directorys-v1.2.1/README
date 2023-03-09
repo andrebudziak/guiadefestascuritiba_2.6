@@ -1,0 +1,79 @@
+DirectoryS Wordpress Theme
+
+v1.2.0
+-ADDED: The possibility to use sandbox API from PayPal
+-ADDED: The possibility to choose what features your users can use when they create their listings
+-ADDED: Option to change kilometers in miles for geolocation radius
+-ADDED: Image Holder for listings that don't have a featured image
+-ADDED: Listings category URL generator in "Icon Content" shortcode
+-ADDED: Listings duplicates check(title and coordinates)
+-ADDED: Show stars for each rating in listings (Stars are are not showing for the old ratings)
+-FIXED: The pagination of the "Recent Places" shortcode is not working on homepage
+-FIXED: New Users cannot upload/use images
+-FIXED: Users role is now displayed properly in admin users page
+-FIXED: Payment currency is not displayed correctly in front-end (now you have to set it manually)
+-FIXED: "Latest Posts" widget visual bug when the title is longer than one line
+-FIXED: Partners links are not disabled when there is no link
+-FIXED: "Blog" shortcode filtering problem
+-FIXED: Custom excerpt don't work for listings(used when you create your listings content with the page builder"
+-FIXED: Listings contact icons generation bug
+-FIXED: Not all fonts are changing when they are changed from typography option
+
+v1.1.2
+-FIXED: PHP notices
+
+v1.1.1
+-ADDED: Option to set map default zoom
+-IMPROVED: Contact fields can have links as their value
+-FIXED: Registered users can see "Submit for Review" after their account expired
+-FIXED: Some words are not translatable ("Comments are not allowed", "Search" for listings, "No ratings yet", "By", "Rating", "Date")
+-FIXED: "Text" shortcode lose text formatting when edited
+-FIXED: Shortcodes children lose their close button after post save
+-FIXED: Dividers have green color even when their color theme is changed
+-FIXED: In some cases, the page sidebar cannot be changed
+-FIXED: Option "Pinned header" don't work
+-FIXED: Map markers don't always show when geolocation is active
+-FIXED: Minor visual bugs
+
+v1.1.0
+-ADDED: Listings custom fields
+-ADDED: Option to change listings name in permalinks
+-ADDED: Possibility to show just the "map" or just the "listings filter bar"
+-ADDED: Video and gallery format to listings
+-ADDED: Contact Form 7 to "Contact Form" shortcode
+-IMPROVED: Heading tags are used properly (SEO)
+-IMPROVED: "Best Sites" shortcode can now show properly more than 4 items
+-IMPROVED: Posts now have their date displayed
+-FIXED: Listings search don't filter map markers properly
+-FIXED: "Login Form" shortcode don't work
+-FIXED: Ratings details are displayed even when ratings are turned off for listings
+-FIXED: Posts date displayed in widgets is not correct
+-FIXED: Minor visual bugs
+-FIXED: Some words are not translatable
+
+
+v1.0.2
+-ADDED: Option to use/not use geolocation feature
+-ADDED: Option to always have geolocation active
+-ADDED: Option to display map in different pages (e.g. archive, search, 404 etc)
+-IMPROVED: Page Builder interface visual improvements
+-IMPROVED: Listings categories and locations have a scroll bar if they are many
+-IMPROVED: "Best Sites" shortcode have an option to display only featured listings
+-IMPROVED: "Best Sites" shortcode can filter listings by category and location
+-IMPROVED: Listings pages now have a marker that shows their location on their maps
+-FIXED: Register forms don't give package information if there is only one package created
+-FIXED: Users cannot register from "Login/Register Form" widget
+-FIXED: Header top bar don't hide when you choose to not display it from options
+
+
+v1.0.1
+-IMPROVED: google map UI improvements
+-IMPROVED: google map markers cluster together when they are too close to each other
+-CHANGED: Page builder is made available for Posts and Listings
+-FIXED: minor visual bugs
+-FIXED: Listings contact fields not saving icon
+-FIXED: Some words from localization files are missing
+-FIXED: Admin shortcodes window opens without any content
+
+v1.0.0
+-initial release

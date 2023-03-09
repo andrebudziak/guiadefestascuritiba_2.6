@@ -1,0 +1,63 @@
+RewriteEngine on
+RewriteCompatibility2 On
+RepeatLimit 200
+RewriteBase 
+# unsupported directive: [ISAPI_Rewrite]
+
+# Evita o download do arquivo .htaccess via browser
+RewriteRule ^/.htaccess$ /Erro.aspx
+
+#Configuração para tratamento das barras no endereço
+#  Este é um caso comum para erros do tipo
+#  www.site.com.br/produto/3335-cadeira e
+#  www.site.com.br/produto/3335-cadeira/
+RewriteRule ^([^.?]+[^.?/])$ $1/ [R,L]
+
+#Regra para navegar na TV Online
+RewriteRule ^/([0-9A-Za-z0-9]{0,})/TvOnline /tvOnline.aspx
+
+#Regra para navegar nas categorias
+RewriteRule ^/Categoria/([0-9A-Za-z0-9]{0,})/Index.aspx /Index.aspx
+RewriteRule ^/Categoria/([0-9A-Za-z0-9]{0,})/tema.aspx /tema.aspx
+RewriteRule ^/Categoria/([0-9A-Za-z0-9]{0,})/convite.aspx /convite.aspx
+RewriteRule ^/Categoria/([0-9A-Za-z0-9]{0,})/oferta.aspx /oferta.aspx
+RewriteRule ^/Categoria/([0-9A-Za-z0-9]{0,})/TvOnline /tvOnline.aspx
+RewriteRule ^/Categoria/([0-9A-Za-z0-9]{0,})/comofunciona.aspx /comofunciona.aspx
+RewriteRule ^/Categoria/([0-9A-Za-z0-9]{0,})/politica.aspx /politica.aspx
+RewriteRule ^/Categoria/([0-9A-Za-z0-9]{0,})/comoanunciar.aspx /comoanunciar.aspx
+RewriteRule ^/Categoria/([0-9A-Za-z0-9]{0,}) /categoria.aspx?tipo_categoria=$0
+
+#Regra para navegar nas temas
+RewriteRule ^/Tema/([0-9A-Za-z0-9]{0,})/Index.aspx /Index.aspx
+RewriteRule ^/Tema/([0-9A-Za-z0-9]{0,})/tema.aspx /tema.aspx
+RewriteRule ^/Tema/([0-9A-Za-z0-9]{0,})/convite.aspx /convite.aspx
+RewriteRule ^/Tema/([0-9A-Za-z0-9]{0,})/oferta.aspx /oferta.aspx
+RewriteRule ^/Tema/([0-9A-Za-z0-9]{0,})/TvOnline /tvOnline.aspx
+RewriteRule ^/Tema/([0-9A-Za-z0-9]{0,})/comofunciona.aspx /comofunciona.aspx
+RewriteRule ^/Tema/([0-9A-Za-z0-9]{0,})/politica.aspx /politica.aspx
+RewriteRule ^/Tema/([0-9A-Za-z0-9]{0,})/comoanunciar.aspx /comoanunciar.aspx
+RewriteRule ^/Tema/([0-9A-Za-z0-9]{0,}) /categoria_tema.aspx?tipo_tema=$0
+
+#Regra para navegar nas convites
+RewriteRule ^/Convite/([0-9A-Za-z0-9]{0,})/Index.apx /Index.aspx
+RewriteRule ^/Convite/([0-9A-Za-z0-9]{0,})/tema.aspx /tema.aspx
+RewriteRule ^/Convite/([0-9A-Za-z0-9]{0,})/convite.aspx /convite.aspx
+RewriteRule ^/Convite/([0-9A-Za-z0-9]{0,})/oferta.aspx /oferta.aspx
+RewriteRule ^/Convite/([0-9A-Za-z0-9]{0,})/TvOnline /tvOnline.aspx
+RewriteRule ^/Convite/([0-9A-Za-z0-9]{0,})/comofunciona.aspx /comofunciona.aspx
+RewriteRule ^/Convite/([0-9A-Za-z0-9]{0,})/politica.aspx /politica.aspx
+RewriteRule ^/Convite/([0-9A-Za-z0-9]{0,})/comoanunciar.aspx /comoanunciar.aspx
+RewriteRule ^/Convite/([0-9A-Za-z0-9]{0,}) /categoria_convite.aspx?tipo_convite=$0
+
+#Regra para navegar nas ofertas
+RewriteRule ^/Oferta/([0-9A-Za-z0-9]{0,})/Home /Index.aspx
+RewriteRule ^/Oferta/([0-9A-Za-z0-9]{0,})/Tema /tema.aspx
+RewriteRule ^/Oferta/([0-9A-Za-z0-9]{0,})/Convite /convite.aspx
+RewriteRule ^/Oferta/([0-9A-Za-z0-9]{0,})/Oferta /oferta.aspx
+RewriteRule ^/Oferta/([0-9A-Za-z0-9]{0,})/TvOnline /tvOnline.aspx
+RewriteRule ^/Oferta/([0-9A-Za-z0-9]{0,})/ComoFunciona /comofunciona.aspx
+RewriteRule ^/Oferta/([0-9A-Za-z0-9]{0,})/Politica /politica.aspx
+RewriteRule ^/Oferta/([0-9A-Za-z0-9]{0,})/ComoAnunciar /comoanunciar.aspx
+RewriteRule ^/Categoria/Oferta/([0-9A-Za-z0-9]{0,}) /detalhe_oferta.aspx?coferta=$0
+RewriteRule ^/Oferta/([0-9A-Za-z0-9]{0,}) /detalhe_oferta.aspx?coferta=$0
+

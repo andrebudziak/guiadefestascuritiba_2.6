@@ -1,0 +1,620 @@
+#page-tamer {
+    display: none;
+}
+
+.holo-row {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    background-color: transparent;
+    border: 1px solid #dadada;
+    border-radius: 0;
+}
+
+.holo-column {
+    display: block;
+    min-height: 120px;
+    height: auto;
+    width: auto;
+}
+
+.column-body {
+    background-color: #e7e7e7;
+    min-height: 100px;
+    margin-right: 30px;
+    padding: 5px;
+}
+
+.row-header {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #dadada;
+    color: #8c8c8c;
+}
+
+.row-content {
+    height: auto;
+    width: auto;
+    padding: 30px 0 30px 30px;
+    background-color: #f3f3f3;
+}
+
+.col-sm-4 {
+    float: left;
+    width: 33.333333%;
+}
+
+.col-sm-8 {
+    float: left;
+    width: 66.666666%;
+}
+
+.col-sm-6 {
+    float: left;
+    width: 50%;
+}
+
+.col-sm-3 {
+    float: left;
+    width: 25%;
+}
+
+.holo-element {
+    position: relative;
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #dadada;
+    margin-bottom: 5px;
+}
+
+.column-body .holo-element:last-child {
+    margin-bottom: 0;
+}
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.row-content > .ui-state-highlight {
+    background-color: #fffaf1;
+    height: 58px;
+    margin: 0 1%;
+    float: left;
+}
+
+.column-body > .ui-state-highlight {
+    background-color: #fffaf1;
+    height: 58px;
+    margin: 5px;
+}
+
+.children-container > .ui-state-highlight {
+    display: block;
+    background-color: #fffaf1;
+    height: 37px;
+    margin: 3px 0;
+}
+
+.page-tamer-items-pane {
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 8px 0 0 8px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 14px;
+    background-color: #f3f3f3;
+    border: 1px solid #dbdbdb;
+}
+
+.page-tamer-items-pane .page-tamer-item {
+    float: left;
+    background-color: #fff;
+    height: 84px;
+    width: 84px;
+    margin: 0 10px 10px 0;
+    padding: 2px;
+    border: 1px solid #dbdbdb;
+}
+
+.page-tamer-items-drop {
+    height: 100px;
+    background-color: #fcfcdc;
+}
+
+.white-popup-block {
+    background: #FFF;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+}
+
+.white-popup-block fieldset table {
+    margin-bottom: 20px;
+    border-spacing: 0;
+}
+
+.white-popup-block fieldset table td:first-child {
+    /*width: 40%;*/
+}
+
+.wp-color-result {
+    margin: 0;
+}
+
+.row-columns-structure {
+    float: left;
+    margin: 0;
+}
+
+.row-columns-structure li {
+    float: left;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+
+.element-header {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    background: #eee;
+}
+
+.holo-element:hover .element-header {
+    display: block;
+}
+
+.element-delete {
+    float: right;
+    margin: -1px 5px 0 0;
+    background-size: 100% 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.element-duplicate {
+    float: right;
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    font-size: 14px;
+}
+
+.element-settings {
+    float: right;
+    margin: -1px 0 0 0;
+    background-size: 100% 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.holo-element .element-delete {
+    margin-top: 0;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index: 1005;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+#simplemodal-overlay {
+    background-color: #000;
+}
+
+#simplemodal-container {
+    padding: 20px 30px;
+    background-color: #fff;
+}
+
+#simplemodal-container a.modalCloseImg {
+    width:20px;
+    height:20px;
+    display:inline;
+    z-index: 3200000;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+}
+
+.white-popup-block {
+    display: none;
+    /*height: 80%;*/
+    overflow: auto;
+}
+
+.simplemodal-container .white-popup-block {
+    width: auto;
+    height: 100%;
+}
+
+.form-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: transparent url(img/delete.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+/************************************************ modal ***************************************************/
+
+.holo-child {
+    display: block;
+    padding: 10px;
+    margin: 3px 0;
+    background-color: #eee;
+}
+
+.add-child {
+    cursor: pointer;
+}
+
+.checkboxes-container input {
+    float: left;
+}
+
+.leanModal-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: transparent url(img/delete.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.value-slider {
+    position: relative;
+    width: 150px;
+    height: 4px;
+    background-color: #eeeeee;
+    float: left;
+    margin: 12px 0 0 10px;
+}
+
+.ui-slider .ui-slider-range {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #000;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-style: none;
+    border-width: 0;
+    color: #FFFFFF;
+    display: block;
+    font-size: 0.7em;
+    position: absolute;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.ui-slider .ui-slider-handle {
+    cursor: pointer;
+    height: 14px;
+    position: absolute;
+    width: 14px;
+    z-index: 2;
+    margin-top: -5px;
+    margin-left: -5px;
+    background-color: #2ea2cc;
+    border-radius: 4px;
+    outline: 0;
+}
+
+.icon-wrapper {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+#social-icons-form {
+    padding: 20px 30px;
+}
+
+#social-icons-form-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 99999999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.holo-main-options {
+    width: 900px;
+    height: 80%;
+    vertical-align: top;
+    padding: 0;
+}
+
+.holo-main-options td {
+    padding: 5px 0;
+    border-top: 1px solid #eee;
+}
+
+.holo-main-options > table > tr:first-child td {
+    border: 0;
+}
+
+.holo-style-options {
+    /*display: none;*/
+    vertical-align: top;
+    width: 300px;
+    height: 500px;
+    padding: 0 0 0 25px;
+    float: left;
+    border-left: 1px solid #e5e5e5;
+    /*border-bottom: 1px solid #ccc;*/
+    /*background-color: #e5e5e5;*/
+}
+
+.holo-style-options td {
+    padding: 5px 0;
+}
+
+.holo-style-options td:last-child {
+    display: none;
+}
+
+.holo-main-options label, .holo-style-options label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 5px;
+}
+
+.holo-main-options td, .holo-style-options td {
+    padding: 10px 0;
+}
+
+.holo-main-options table {
+    width: 100%;
+}
+
+.holo-main-options > table > tbody > tr > td:first-child {
+    width: 60%;
+}
+
+.holo-main-options input[type="text"], .holo-main-options select {
+    width: 50%;
+    height: 30px;
+}
+
+.upload-container .upload-wrapper {
+
+}
+
+i.icon-sample {
+    display: block;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.custom-css-container {
+    float: left;
+}
+
+.white-popup-block {
+    width: 1200px;
+}
+
+.white-popup-block.children-modal {
+    width: 960px;
+    padding: 20px 30px;
+}
+
+#holo-icons-form {
+    padding: 20px 30px;
+}
+
+#holo-icons-form .icon-wrapper {
+    border: 1px solid #777;
+    cursor: pointer;
+    text-align: center;
+}
+
+#holo-icons-form .icon-wrapper i {
+    color: #777;
+}
+
+#holo-icons-form .icon-wrapper.selected-icon {
+    border: 1px solid #219fd1;
+}
+
+#holo-icons-form .icon-wrapper.selected-icon i {
+    color: #219fd1;
+}
+
+
+#shortcodes-generator-window {
+    display: none;
+    background-color: #fff;
+    width: 500px;
+    height: 700px;
+    padding: 30px 20px;
+}
+
+.holo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    z-index: 9999;
+}
+
+.holo-modal-wrapper {
+    position: fixed;
+    background-color: #fff;
+    left: 50%;
+    top: 60px;
+    width: auto;
+    height: 80%;
+    overflow: hidden;
+}
+
+.holo-modal-content {
+    width: auto;
+    overflow: auto;
+    padding: 0 20px;
+    margin: 50px 0;
+}
+
+.holo-modal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    height: 30px;
+    width: 100%;
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #ddd;
+}
+
+.holo-modal-header h2 {
+    margin: 0;
+}
+
+.holo-modal-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #e5e5e5;
+    /*-webkit-box-shadow: 0 -1px 1px #ddd;*/
+    /*-moz-box-shadow: 0 -1px 1px #ddd;*/
+    /*box-shadow: 0 -1px 1px #ccc;*/
+}
+
+.left-side {
+    float: left;
+    margin-left: 20px;
+}
+
+.right-side {
+    float: right;
+    margin-right: 20px;
+}
+
+.mCSB_draggerRail {
+    display: none;
+}
+
+.mCSB_scrollTools {
+    margin-right: -6px;
+}
+
+.element-id {
+    width: 300px;
+    height: auto;
+    float: right;
+    /*border: 1px solid #ccc;*/
+}
+
+#page-tamer .inside {
+    margin: 0;
+    padding: 10px;
+    background-color: #e7e7e7;
+}
+
+.holo-element {
+    box-shadow: none;
+    height: 80px;
+    padding: 10px;
+    color: #8c8c8c;
+}
+
+.element-header {
+    height: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #dadada;
+}
+
+.element-header {
+    text-align: left;
+    line-height: 27px;
+}
+
+.element-drag {
+    line-height: 18px;
+    font-size: 12px;
+    padding: 0 10px 0 3px;
+    width: 12px;
+    height: 16px;
+    float: left;
+    margin: 5px 5px 5px 5px;
+    border-right: 1px solid #ddd
+}
+
+.page-tamer-item span {
+    color: #8c8c8c;
+}
+
+
+.page-tamer-item .element-body i, .holo-element .element-body i {
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #279dd0;
+}
+
+.page-tamer-item.moving {
+    padding: 10px;
+}
+
+.page-tamer-item.ui-draggable-dragging {
+    z-index: 1;
+}
+
+.page-tamer-item.moving .element-body i, .holo-element.moving .element-body i {
+    margin: 7px 0 0 0;
+    display: inline-block;
+}
+
+.page-tamer-item.moving .element-body .shortcode-title, .holo-element.moving .element-body .shortcode-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -8px;
+}
+
+.holo-element.moving .element-header {
+    display: none;
+}
